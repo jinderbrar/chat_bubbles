@@ -85,6 +85,7 @@ defmodule ChatBubblesWeb do
       import Phoenix.HTML
       # Core UI components and translation
       import ChatBubblesWeb.CoreComponents
+      import ChatBubblesWeb.ChatComponents
       import ChatBubblesWeb.Gettext
 
       # Shortcut for generating JS commands

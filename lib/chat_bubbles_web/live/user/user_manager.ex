@@ -8,7 +8,7 @@ defmodule ChatBubblesWeb.UserManager do
   def create_new_user do
     %User{
       id: to_string(:os.system_time(:nano_seconds)),
-      username: MnemonicSlugs.generate_slug(2)
+      username: MnemonicSlugs.generate_slug(2) <> "-" <> to_string(Enum.random(1..1000))
     }
   end
 end
